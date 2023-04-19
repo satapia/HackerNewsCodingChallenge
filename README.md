@@ -26,7 +26,7 @@ Up to 200 of the latest Ask HN, Show HN, and Job stories are at /v0/askstories, 
 
 ### apppsettings file should look like this!
 ```
-@{
+{
   "Logging": {
     "LogLevel": {
       "Default": "Information",
