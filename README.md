@@ -5,7 +5,7 @@ Your solution must be developed using an Angular front-end app that calls a C# .
 
 ## Endpoint
 
-###https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty
+### https://hacker-news.firebaseio.com/v0/item/8863.json?print=pretty
 {
   "by" : "dhouston",
   "descendants" : 71,
@@ -20,11 +20,11 @@ Your solution must be developed using an Angular front-end app that calls a C# .
 
 Up to 200 of the latest Ask HN, Show HN, and Job stories are at /v0/askstories, /v0/showstories, and /v0/jobstories.
 
-###https://hacker-news.firebaseio.com/v0/askstories.json?print=pretty
+### https://hacker-news.firebaseio.com/v0/askstories.json?print=pretty
 [ 9127232, 9128437, 9130049, 9130144, 9130064, 9130028, 9129409, 9127243, 9128571, ..., 9120990 ]
 
 
-###appsettings file should look like this!
+### apppsettings file should look like this!
 {
   "Logging": {
     "LogLevel": {
