@@ -23,6 +23,10 @@ Up to 200 of the latest Ask HN, Show HN, and Job stories are at /v0/askstories, 
 ### https://hacker-news.firebaseio.com/v0/askstories.json?print=pretty
 [ 9127232, 9128437, 9130049, 9130144, 9130064, 9130028, 9129409, 9127243, 9128571, ..., 9120990 ]
 
+## Kickoff
+
+Run npm install command before executing the application for the first time!
+Set the baseApiUrl. By default it will use the WebApi deployed in Azure. 
 
 ### apppsettings file should look like this!
 ```
@@ -34,7 +38,15 @@ Up to 200 of the latest Ask HN, Show HN, and Job stories are at /v0/askstories, 
     }
   },
   "AllowedHosts": "*",
-  "BaseUrl": "",
+  "BaseUrl": "https://hacker-news.firebaseio.com/v0/",
   "MaxRecords": 200
 }
+```
+
+### environment variables on the UI application
+```
+export const environment = {
+  production: true,
+  baseApiUrl: 'https://hackernewsapichallenge.azurewebsites.net'
+};
 ```
