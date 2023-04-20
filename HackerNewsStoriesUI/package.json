@@ -20,6 +20,8 @@
     "@angular/platform-browser": "^15.2.0",
     "@angular/platform-browser-dynamic": "^15.2.0",
     "@angular/router": "^15.2.0",
+    "cli-spinner": "^0.2.10",
+    "cli-spinners": "^2.8.0",
     "jest-editor-support": "*",
     "ngx-pagination": "^6.0.3",
     "rxjs": "~7.8.0",
