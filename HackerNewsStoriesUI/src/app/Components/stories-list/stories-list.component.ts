@@ -20,13 +20,16 @@ export class StoriesListComponent implements OnInit {
   tableSize: number = 10;
   tableSizes: any = [5, 10, 25, 50];
   columnNames: string[] = ['ID', 'Title', 'Link'];
+  loading: boolean = false;
 
   @ViewChild(MatPaginator, { static: true }) paginator!: MatPaginator;
 
   constructor(private storiesService: StoriesService) { }
 
   ngOnInit(): void {
+    this.loading = true;
     this.getStories();
+    
   }
 
   getStories(): void {
@@ -36,6 +39,7 @@ export class StoriesListComponent implements OnInit {
           this.stories = stories
           this.dataSource = new MatTableDataSource<Story>(this.stories);
           this.dataSource.paginator = this.paginator;
+          this.loading = false; 
         },
         error: (response) => {
           console.log(response)
