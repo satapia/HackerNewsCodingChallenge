@@ -7,11 +7,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './Components/home/home.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StoriesListComponent
+    StoriesListComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +22,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     MatTableModule,
     MatPaginatorModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot([
+      {
+        path: '', component: HomeComponent, pathMatch: 'full'
+    }])
   ],
   providers: [],
   bootstrap: [AppComponent]
